@@ -52,11 +52,12 @@
 
 	.hero-text-container {
 		width: 1280px;
+		padding-bottom: 2.5rem;
 
 		p {
 			font-family: Akkordeon;
 			text-transform: uppercase;
-			font-size: clamp(9rem, 36vw, 25rem);
+			font-size: clamp(9rem, 32vw, 25rem);
 			color: var(--color-text-red);
 
 			margin: 0;

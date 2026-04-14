@@ -1,10 +1,9 @@
 async function renderCanImages() {
+	const carousellElement = document.querySelector(".carousell")
+	if (!carousellElement) return;
+
 	const response = await fetch("./assets/cans.json");
 	const cans = await response.json();
-
-	const carousellElement = document.querySelector(".carousell")
-
-	if (!carousellElement) return;
 
 	cans.forEach(can => {
 		const canElement = document.createElement("div")

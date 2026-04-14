@@ -1,0 +1,126 @@
+@font-face {
+	font-family: Akkordeon;
+	src: url(assets/fonts/Akkordeon-DEMO.otf);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.header {
+	height: 93px;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	section {
+		width: 50%;
+		display: flex;
+		justify-content: space-between;
+
+		.brand-icon {
+			width: 50px;
+			height: 50px;
+			background-color: var(--color-background-black);
+		}
+
+		.hamburger-menu {
+			width: 50px;
+			height: 50px;
+			background-color: var(--color-background-black);
+		}
+	}
+}
+
+.hero {
+	width: 100vw;
+	height: 960px;
+
+	/* Chose to add background-image through css to make it easier to place text on top*/
+	background-image: url("assets/hero.jpg");
+	background-size: cover;
+	background-position: 68% 15%;
+
+	display: flex;
+	align-items: end;
+	justify-content: center;
+
+	padding: 0 50px 0 50px;
+
+	.hero-text-container {
+		width: 1280px;
+
+		p {
+			font-family: Akkordeon;
+			text-transform: uppercase;
+			font-size: clamp(9rem, 36vw, 25rem);
+			color: var(--color-text-red);
+
+			margin: 0;
+			padding: 0;
+			line-height: 0.8;
+		}
+	}
+
+
+}
+
+.carousell {
+	padding: 5rem 0 3rem 0;
+	max-width: 100vw;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+	gap: 2rem;
+
+	overflow-x: auto;
+	/* overflow-y: hidden; */
+	-webkit-overflow-scrolling: touch;
+
+	.carousell-item {
+		flex: 0 0 190px;
+		margin: 0;
+
+		.carousell-item-content {
+			width: 90%;
+			height: auto;
+			display: block;
+			object-fit: contain;
+		}
+	}
+}
+
+.all-products-btn-container {
+	display: flex;
+	justify-content: center;
+	margin-top: 1rem;
+	margin-bottom: 10rem;
+
+	.all-products-btn {
+		display: flex;
+		border: none;
+		background-color: var(--color-button-black);
+		width: auto;
+		height: auto;
+		margin: 0;
+		border-radius: 25px;
+
+		a {
+			font-family: sans-serif;
+			font-weight: 700;
+			font-size: clamp(14px, 0.875rem + ((1vw - 3.2px) * 0.208), 16px);
+			padding: 12px 30px 12px 30px;
+			text-transform: uppercase;
+			text-decoration: none;
+			color: var(--color-text-white);
+			line-height: 1;
+		}
+	}
+
+	.all-products-btn:hover {
+		background-color: var(--color-hoover-red);
+	}
+}

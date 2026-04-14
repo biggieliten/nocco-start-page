@@ -1,0 +1,46 @@
+[
+	{
+		"id": "exp_nocco_blood_orange",
+		"path": "assets/EXP_NOCCO_Blood_Orange_6.0_web_tiny.png"
+	},
+	{
+		"id": "exp_nocco_caribbean",
+		"path": "assets/EXP_NOCCO_Caribbean_6.0_web_tiny.png"
+	},
+	{
+		"id": "exp_nocco_focus_ramonade",
+		"path": "assets/EXP_NOCCO_Focus_Ramonade_6.0_web.png"
+	},
+	{
+		"id": "exp_nocco_limon_del_sol",
+		"path": "assets/EXP_NOCCO_Limon_Del_Sol_6.0_web_tiny.png"
+	},
+	{
+		"id": "se_nocco_carnival",
+		"path": "assets/SE_NOCCO_Carnival_6.1_web-1-scaled.png"
+	},
+	{
+		"id": "se_nocco_focus_passionite",
+		"path": "assets/SE_NOCCO_Focus_Passionite_6.0_web-446x1280.png"
+	},
+	{
+		"id": "se_nocco_sancitro",
+		"path": "assets/SE_NOCCO_SanCitro_6.1_web-scaled.png"
+	},
+	{
+		"id": "se_nocco_sunnysoda",
+		"path": "assets/SE_NOCCO_SunnySoda_6.0_web.png"
+	},
+	{
+		"id": "se_nocco_golden_soleil",
+		"path": "assets/SE_NOCCO_GoldenSoleil_Summer_2026_6.0_web.png"
+	},
+	{
+		"id": "se_nocco_bcaa_plus_peachango",
+		"path": "assets/nocco-bcaa-plus-peachango-447x1280.png"
+	},
+	{
+		"id": "se_nocco_arancia",
+		"path": "assets/SE_NOCCO_Arancia_6.0_web_tiny-scaled.png"
+	}
+]

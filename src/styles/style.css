@@ -1,6 +1,6 @@
 @font-face {
 	font-family: Akkordeon;
-	src: url(assets/fonts/Akkordeon-DEMO.otf);
+	src: url(../assets/fonts/Akkordeon-DEMO.otf);
 }
 
 * {
@@ -40,7 +40,7 @@
 	height: 960px;
 
 	/* Chose to add background-image through css to make it easier to place text on top*/
-	background-image: url("assets/hero.jpg");
+	background-image: url("../assets/hero.jpg");
 	background-size: cover;
 	background-position: 68% 15%;
 

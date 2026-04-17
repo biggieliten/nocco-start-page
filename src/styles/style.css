@@ -10,7 +10,7 @@
 }
 
 .header {
-	height: 93px;
+	height: clamp(45px, 15vw, 93px);
 	width: 100vw;
 	display: flex;
 	align-items: center;
@@ -20,26 +20,54 @@
 		width: 80%;
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
+		position: fixed;
+
 
 		.brand-icon {
 			width: 50px;
 			height: 50px;
-			background-color: var(--color-background-black);
+			/* background-color: var(--background-black); */
 		}
 
-		.hamburger-menu-icon {
-			width: 50px;
-			height: 50px;
-			background-color: var(--color-background-black);
+		.hamburger-menu-btn {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border: none;
+			background-color: transparent;
+			cursor: pointer;
+
+			height: 34px;
+			width: 46px;
+
+			transition: ease-in-out 0.15s;
+
+			.hamburger-menu-icon {
+				transition: ease-in-out 0.15s;
+				color: black;
+				font-size: clamp();
+				/* width: 50px;
+				height: 50px; */
+				/* background-color: var(--background-black); */
+			}
+		}
+
+		.hamburger-menu-btn:hover {
+			background-color: var(--button-black);
+
+			.hamburger-menu-icon {
+				color: white;
+			}
 		}
 	}
 }
 
 .hero {
 	width: 100vw;
-	height: 960px;
+	min-height: 75vh;
 
-	/* Chose to add background-image through css to make it easier to place text on top*/
+	/* Chose to add background-image through css to make it easier to place text on top */
 	background-image: url("../assets/hero.jpg");
 	background-size: cover;
 	background-position: 68% 15%;
@@ -58,7 +86,7 @@
 			font-family: Akkordeon;
 			text-transform: uppercase;
 			font-size: clamp(9rem, 32vw, 25rem);
-			color: var(--color-text-red);
+			color: var(--text-red);
 
 			margin: 0;
 			padding: 0;
@@ -101,7 +129,7 @@
 	.all-products-btn {
 		display: flex;
 		border: none;
-		background-color: var(--color-button-black);
+		background-color: var(--button-black);
 		width: auto;
 		height: auto;
 		margin: 0;
@@ -114,12 +142,12 @@
 			padding: 12px 30px 12px 30px;
 			text-transform: uppercase;
 			text-decoration: none;
-			color: var(--color-text-white);
+			color: var(--text-white);
 			line-height: 1;
 		}
 	}
 
 	.all-products-btn:hover {
-		background-color: var(--color-hoover-red);
+		background-color: var(--hoover-red);
 	}
 }

@@ -1,12 +1,12 @@
 :root {
-	--color-background-white: #ffff;
-	--color-background-black: #000000;
+	--background-white: #ffff;
+	--background-black: #000000;
 
-	--color-text-red: #fe3001;
-	--color-text-white: #ffff;
-	--color-text-black: #000000;
+	--text-red: #fe3001;
+	--text-white: #ffff;
+	--text-black: #000000;
 
-	--color-button-black: #000000;
+	--button-black: #000000;
 
-	--color-hoover-red: #fe3001;
+	--hoover-red: #fe3001;
 }

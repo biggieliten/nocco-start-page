@@ -223,6 +223,44 @@ main {
 			}
 		}
 	}
+
+	.performing-as-one-section {
+		margin: 6rem auto;
+		display: flex;
+		align-items: stretch;
+	}
+
+	.performing-as-one-section > img {
+		width: 100%;
+		max-width: 650px;
+		height: 600px;
+		object-fit: cover;
+	}
+
+	.performing-as-one-box {
+		background-color: red;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 1rem;
+		flex: 1;
+		height: 600px;
+	}
+
+	.performing-as-one-text-img {
+		width: 80%;
+		max-width: 600px;
+		height: auto;
+	}
+
+	.performing-as-one-text {
+		font-family: Akkordeon;
+		font-size: clamp(10px, 10vw, 40px);
+		line-height: 1;
+		text-align: center;	
+		color: var(--text-white);
+	}	
 }
 
 .carousell {

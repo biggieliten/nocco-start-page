@@ -1,6 +1,6 @@
 # Inlämning 1
 
-- Filip Isaksson
-- Marcus Franzén
+- Filip Isaksson (Johan)
+- Marcus Franzén (Lars)
 
 Vi återskapar https://nocco.com/

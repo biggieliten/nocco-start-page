@@ -9,6 +9,13 @@
 	box-sizing: border-box;
 }
 
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
 .header {
 	height: clamp(45px, 15vw, 93px);
 	width: 100vw;
@@ -65,7 +72,7 @@
 
 .hero {
 	width: 100vw;
-	min-height: 75vh;
+	height: 75vh;
 
 	/* Chose to add background-image through css to make it easier to place text on top */
 	background-image: url("../assets/hero.jpg");
@@ -75,49 +82,115 @@
 	display: flex;
 	align-items: end;
 	justify-content: center;
+	padding: 0 5.5vw;
 
-	padding: 0 50px 0 50px;
 
 	.hero-text-container {
-		width: 1280px;
+		max-width: 1280px;
+		flex: 1;
 		padding-bottom: 2.5rem;
+	}
 
-		p {
-			font-family: Akkordeon;
-			text-transform: uppercase;
-			font-size: clamp(9rem, 32vw, 25rem);
-			color: var(--text-red);
-
-			margin: 0;
-			padding: 0;
-			line-height: 0.8;
-		}
+	.hero-text-container p {
+		font-family: Akkordeon;
+		text-transform: uppercase;
+		font-size: clamp(14rem, 31vw, 25rem);
+		line-height: 0.8;
+		color: var(--text-red);
 	}
 }
 
+
+
+
 main {
-	padding-right: 10rem;
-	padding-left: 10rem;
+	max-width: 1280px;
+	margin: 0 5.5vw;
 
-	.news-list {
+	.all-products-btn-container {
 		display: flex;
-		flex-wrap: wrap;
-		display: grid;
-		gap: 1rem;
-		grid-template-columns: repeat(3, minmax(0, 1fr));
+		justify-content: center;
+		margin-top: 1rem;
+		/* margin-bottom: 10rem; */
 
-		li {
-			list-style: none;
-			display: inline-flex;
-			flex-direction: column;
-			width: fit-content;
-			aspect-ratio: 3/4;
+		.all-products-btn {
+			display: flex;
+			border: none;
+			background-color: var(--button-black);
+			border-radius: 25px;
+
+			a {
+				font-family: sans-serif;
+				font-weight: 700;
+				font-size: clamp(14px, 2vw, 16px);
+				padding: 12px 35px;
+				text-transform: uppercase;
+				text-decoration: none;
+				color: var(--text-white);
+				line-height: 1;
+				white-space: nowrap;
+			}
 		}
 
-		img {
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
+		.all-products-btn:hover {
+			background-color: var(--hoover-red);
+		}
+	}
+
+	.news-section {
+		margin-top: 2rem;
+
+		.news-header {
+			display: flex;
+			justify-content: center;
+			margin: min(5vw, 20rem) auto;
+
+			font-family: Akkordeon;
+			font-size: clamp(100px, 20vw, 200px);
+			font-weight: 500;
+			line-height: 1;
+			text-transform: uppercase;
+			text-wrap: wrap;
+			text-align: center;
+
+		}
+
+		.news-list {
+			display: grid;
+			gap: 1rem;
+			grid-template-columns: repeat(3, minmax(0, 1fr));
+
+			li {
+				list-style: none;
+				display: flex;
+				align-items: center;
+				flex-direction: column;
+				width: 100%;
+				aspect-ratio: 3/4;
+			}
+
+			.news-list-item-image {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+
+			.news-list-item-header {
+				width: 100%;
+				padding-top: 1rem;
+
+				font-family: "Inter", sans-serif;
+				font-size: clamp(1.5rem, 1.5vw, 2rem);
+				font-weight: 800;
+				text-transform: uppercase;
+				word-break: break-word;
+				text-align: center;
+			}
+
+			.news-list-item-date {
+				font-family: "Inter", sans-serif;
+				font-size: clamp(16px, 2vw, 20px);
+			}
 		}
 	}
 }
@@ -131,7 +204,7 @@ main {
 	gap: 2rem;
 
 	overflow-x: auto;
-	/* overflow-y: hidden; */
+
 	-webkit-overflow-scrolling: touch;
 
 	.carousell-item {
@@ -147,34 +220,9 @@ main {
 	}
 }
 
-.all-products-btn-container {
-	display: flex;
-	justify-content: center;
-	margin-top: 1rem;
-	margin-bottom: 10rem;
+@media (max-width: 600px) {
+	main .news-section .news-list {
+		grid-template-columns: 1fr;
 
-	.all-products-btn {
-		display: flex;
-		border: none;
-		background-color: var(--button-black);
-		width: auto;
-		height: auto;
-		margin: 0;
-		border-radius: 25px;
-
-		a {
-			font-family: sans-serif;
-			font-weight: 700;
-			font-size: clamp(14px, 0.875rem + ((1vw - 3.2px) * 0.208), 16px);
-			padding: 12px 30px 12px 30px;
-			text-transform: uppercase;
-			text-decoration: none;
-			color: var(--text-white);
-			line-height: 1;
-		}
-	}
-
-	.all-products-btn:hover {
-		background-color: var(--hoover-red);
 	}
 }

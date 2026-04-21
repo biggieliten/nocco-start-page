@@ -50,4 +50,5 @@ async function renderNewsCards() {
 }
 
 await renderCanImages();
+await renderCanImages();
 await renderNewsCards();

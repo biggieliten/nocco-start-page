@@ -4,8 +4,14 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+Cham:wght@100..900&display=swap"
+		rel="stylesheet">
 	<link rel="stylesheet" href="styles/style.css">
 	<link rel="stylesheet" href="styles/variables.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 	<script type="module" src="script.js"></script>
 	<title>NOCCO</title>
 </head>
@@ -13,8 +19,10 @@
 <body>
 	<header class="header">
 		<nav>
-			<i class="brand-icon"></i>
-			<i class="hamburger-menu"></i>
+			<a href="" class="brand-icon"><img src="./assets/icon.png" alt=""></a>
+			<button class="hamburger-menu-btn">
+				<span class="material-icons hamburger-menu-icon">menu</>
+			</button>
 		</nav>
 	</header>
 	<section>
@@ -24,20 +32,18 @@
 				<p>perform</p>
 			</div>
 		</article>
-		<main>
-			<section class="carousell">
-			</section>
-			<div class="all-products-btn-container">
-				<button class="all-products-btn"><a href="">all products</a></button>
-			</div>
-
-
-			<section class="news-section">
-				<h2 class="news-header">news and stories</h2>
-				<ul class="news-list"></ul>
-			</section>
-		</main>
 	</section>
+	<section class="carousell">
+	</section>
+	<main>
+		<div class="all-products-btn-container">
+			<button class="all-products-btn"><a href="">all products</a></button>
+		</div>
+		<section class="news-section">
+			<h2 class="news-header">news and stories</h2>
+			<ul class="news-list"></ul>
+		</section>
+	</main>
 </body>
 
 </html>

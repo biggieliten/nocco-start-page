@@ -9,4 +9,10 @@
 	--button-black: #000000;
 
 	--hoover-red: #fe3001;
+
+	--secondary-font: "Inter", sans-serif;
+
+	--button-font-size: clamp(14px, 2vw, 16px);
+	--button-padding: 12px 35px;
+
 }

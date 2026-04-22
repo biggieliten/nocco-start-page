@@ -86,14 +86,14 @@ body {
 		justify-content: end;
 		min-height: 100%;
 		max-width: 1280px;
+		margin: clamp(1rem, 2vw, 2rem) 0;
 		flex: 1;
-		margin-top: clamp(1rem, 2vw, 2rem);
 	}
 
 	.hero-text-container p {
 		font-family: Akkordeon;
 		text-transform: uppercase;
-		font-size: clamp(140px, 35vw, 400px);
+		font-size: clamp(140px, 36vw, 400px);
 		line-height: 0.8;
 		color: var(--text-red);
 	}

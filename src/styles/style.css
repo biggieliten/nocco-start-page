@@ -17,7 +17,7 @@ body {
 }
 
 .header {
-	height: clamp(65px, 15vw, 93px);
+	height: clamp(65px, 12vw, 93px);
 	width: 100vw;
 	display: flex;
 	align-items: center;
@@ -67,7 +67,7 @@ body {
 
 .hero {
 	width: 100vw;
-	height: 75vh;
+	min-height: 75vh;
 
 	/* Chose to add background-image through css to make it easier to place text on top */
 	background-image: url("../assets/hero.jpg");
@@ -75,21 +75,25 @@ body {
 	background-position: 68% 15%;
 
 	display: flex;
-	align-items: end;
+	/* align-items: end; */
 	justify-content: center;
 	padding: 0 5.5vw;
 
 
 	.hero-text-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: end;
+		min-height: 100%;
 		max-width: 1280px;
 		flex: 1;
-		padding-bottom: 2.5rem;
+		margin-top: clamp(1rem, 2vw, 2rem);
 	}
 
 	.hero-text-container p {
 		font-family: Akkordeon;
 		text-transform: uppercase;
-		font-size: clamp(140px, 31vw, 400px);
+		font-size: clamp(140px, 35vw, 400px);
 		line-height: 0.8;
 		color: var(--text-red);
 	}
@@ -201,8 +205,14 @@ main {
 				font-weight: 700;
 				text-transform: uppercase;
 				line-height: 1;
+
+			}
+
+			button:hover {
+				background-color: var(--hoover-red);
 			}
 		}
+
 	}
 }
 

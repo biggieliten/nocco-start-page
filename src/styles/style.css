@@ -238,6 +238,7 @@ main {
 		margin: 4rem auto;
 		display: flex;
 		align-items: stretch;
+		flex-wrap: wrap;
 	}
 
 	.performing-as-one-section > img {
@@ -272,20 +273,24 @@ main {
 		background-color: red;
 		border: 2px solid white;
 		border-radius: 50px;;	
-		width: 50%;
+		width: 80%;
 		height: 8%;	
 	}	
 }
 
-.for-all-perfomers-section a {
+.for-all-performers-section {
 	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
+	flex-direction: row;
+	flex-wrap: nowrap;
 }
 
-.for-all-performers-img img {
+.for-all-performers-text {
+	width: fit-content;
+}
+
+.for-all-performers-img {
+	max-width: 128px;
 	width: 40%;
-	max-width: 400px;
 }
 
 .footer {

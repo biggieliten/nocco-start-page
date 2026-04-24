@@ -127,7 +127,7 @@ body {
 	.carousel-btn-container {
 		display: flex;
 		justify-content: center;
-		margin-top: 1.5rem;
+		margin-top: 3rem;
 
 		.carousel-btn {
 			display: flex;
@@ -307,7 +307,6 @@ main {
 
 .for-all-performers-section {
 	display: flex;
-	margin-left: calc(-50vw + 50%);
 
 	h2 {
 		font-weight: 500;

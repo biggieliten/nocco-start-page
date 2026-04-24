@@ -307,7 +307,6 @@ main {
 
 .for-all-performers-section {
 	display: flex;
-	width: 100%;
 	margin-left: calc(-50vw + 50%);
 
 	h2 {
@@ -325,17 +324,12 @@ main {
 	}
 }
 
-.for-all-performers-text,
-.for-all-performers-img {
-	flex: 1;
-}
-
 .for-all-performers-img img {
 	aspect-ratio: 1;
 	object-fit: cover;
 	box-sizing: border-box;
 	height: auto;
-	max-width: 86%;
+	max-width: 100%;
 	vertical-align: bottom;
 	padding-bottom: 10%;
 	margin-right: auto;
@@ -343,9 +337,7 @@ main {
 
 .for-all-performers-text {
 	max-width: 640px;
-	margin-left: auto;
-	padding-right: 5px;
-	padding-left: 8%;
+	margin-left: 10%;
 	flex-basis: 33%;
 }
 
@@ -449,7 +441,6 @@ main {
 
 @media (max-width: 782px) {
 	main .for-all-performers-section {
-		flex-wrap: nowrap;
-		/*213*/
+		flex-wrap: wrap;
 	}
 }

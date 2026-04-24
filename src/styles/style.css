@@ -307,7 +307,8 @@ main {
 
 .for-all-performers-section {
 	display: flex;
-	gap: 5rem;
+	margin-bottom: 5rem;
+
 
 	h2 {
 		font-weight: 500;
@@ -318,10 +319,15 @@ main {
 	p {
 		font-size: clamp(14px, 1vw, 20px);
 		line-height: 1.6;
-		font-family: "Inter",sans-serif;
+		font-family: "Inter", sans-serif;
 		font-weight: 300;
-		padding-bottom: 30%;
+		/* padding-bottom: 30%; */
 		font-style: prettify;
+		margin-bottom: 1rem;
+	}
+
+	a {
+		color: var(--text-black)
 	}
 }
 
@@ -332,7 +338,6 @@ main {
 	height: auto;
 	max-width: 100%;
 	vertical-align: bottom;
-	padding-bottom: 10%;
 	margin-right: auto;
 }
 

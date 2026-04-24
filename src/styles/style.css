@@ -450,5 +450,6 @@ main {
 @media (max-width: 782px) {
 	main .for-all-performers-section {
 		flex-wrap: nowrap;
+		/*213*/
 	}
 }

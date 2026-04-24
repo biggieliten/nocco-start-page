@@ -312,6 +312,20 @@ main {
   width: 100vw;
   margin-left: calc(-50vw + 50%);
   flex-wrap: wrap;
+
+  h2 {
+	font-weight: 500; 
+	font-size: 60px; 
+	font-family: Akkordeon;
+  }
+
+  p {
+	font-weight: 500; 
+	font-size: 20px; 
+	font-style: normal;
+	text-wrap-style: pretty;
+	text-wrap-mode: initial;
+  }
 }
 
 .for-all-performers-text,
@@ -326,7 +340,8 @@ main {
 	height: auto;
 	max-width: 86%;
 	vertical-align: bottom;
-	width: 1350px;
+	padding-bottom: 10%;
+	margin-right: auto;
 }
 
 .for-all-performers-text {
@@ -337,10 +352,6 @@ main {
   flex-basis: 33%;
 }
 
-.for-all-performers-p {
-	text-wrap-style: pretty;
-	text-wrap-mode: initial;
-}
 
 .footer {
 	border-top: 1px solid black;

@@ -307,20 +307,21 @@ main {
 
 .for-all-performers-section {
 	display: flex;
-	margin-left: calc(-50vw + 50%);
+	gap: 5rem;
 
 	h2 {
 		font-weight: 500;
-		font-size: 60px;
+		font-size: 55px;
 		font-family: Akkordeon;
 	}
 
 	p {
-		font-weight: 500;
-		font-size: 20px;
-		font-style: normal;
-		text-wrap-style: pretty;
-		text-wrap-mode: initial;
+		font-size: clamp(14px, 1vw, 20px);
+		line-height: 1.6;
+		font-family: "Inter",sans-serif;
+		font-weight: 300;
+		padding-bottom: 30%;
+		font-style: prettify;
 	}
 }
 
@@ -337,8 +338,6 @@ main {
 
 .for-all-performers-text {
 	max-width: 640px;
-	margin-left: 10%;
-	flex-basis: 33%;
 }
 
 

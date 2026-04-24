@@ -270,7 +270,7 @@ main {
 	.performing-as-one-section>img {
 		object-fit: cover;
 		aspect-ratio: 1;
-		width: 100%;
+		width: 50%;
 	}
 
 	.performing-as-one-box {
@@ -281,7 +281,7 @@ main {
 		align-items: center;
 		object-fit: cover;
 		aspect-ratio: 1;
-		width: 100%;
+		width: 50%;
 	}
 
 	.performing-as-one-text-img {
@@ -309,7 +309,6 @@ main {
 	display: flex;
 	width: 100%;
 	margin-left: calc(-50vw + 50%);
-	flex-wrap: wrap;
 
 	h2 {
 		font-weight: 500;
@@ -426,6 +425,7 @@ main {
 
 	main .performing-as-one-section {
 		flex-wrap: nowrap;
+		width: 100%;
 	}
 }
 
@@ -434,6 +434,7 @@ main {
 	main .performing-as-one-section>img,
 	main .performing-as-one-box {
 		aspect-ratio: 4/3;
+		width: 100%;
 	}
 }
 
@@ -442,5 +443,12 @@ main {
 	main .performing-as-one-section>img,
 	main .performing-as-one-box {
 		aspect-ratio: 16/9;
+		width: 100%;
+	}
+}
+
+@media (max-width: 782px) {
+	main .for-all-performers-section {
+		flex-wrap: nowrap;
 	}
 }

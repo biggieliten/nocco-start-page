@@ -127,7 +127,7 @@ body {
 	.carousel-btn-container {
 		display: flex;
 		justify-content: center;
-		margin-top: 1.5rem;
+		margin-top: 3rem;
 
 		.carousel-btn {
 			display: flex;
